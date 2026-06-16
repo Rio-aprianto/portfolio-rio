@@ -12,12 +12,16 @@
       "dest": "/public/build/$1"
     },
     {
-      "src": "/(css|js|images|favicon.png)/(.*)",
-      "dest": "/public/$1/$2"
+      "src": "/images/(.*)",
+      "dest": "/public/images/$1"
+    },
+    {
+      "src": "/favicon.ico",
+      "dest": "/public/favicon.ico"
     },
     {
       "src": "/(.*)",
-      "dest": "public/index.php"
+      "dest": "/public/index.php"
     }
   ]
 }
