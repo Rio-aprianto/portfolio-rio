@@ -1,18 +1,24 @@
 {
   "version": 2,
+  "framework": "laravel",
   "builds": [
     {
-      "src": "public/index.php",
-      "use": "vercel-php@0.7.4"
+      "src": "api/index.php",
+      "use": "@vercel/php"
+    },
+    {
+      "src": "public/**/*",
+      "use": "@vercel/static"
     }
   ],
   "routes": [
     {
-      "handle": "filesystem"
+      "src": "/(css|js|images|favicon.ico)(.*)",
+      "dest": "public/$1$2"
     },
     {
       "src": "/(.*)",
-      "dest": "/public/index.php"
+      "dest": "api/index.php"
     }
   ]
 }
