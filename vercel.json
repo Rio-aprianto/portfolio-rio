@@ -10,18 +10,18 @@
       "use": "@vercel/static"
     }
   ],
-  "rewrites": [
+  "routes": [
     {
-      "source": "/images/(.*)",
-      "destination": "/public/images/$1"
+      "src": "/images/(.*)",
+      "dest": "public/images/$1"
     },
     {
-      "source": "/favicon.ico",
-      "destination": "/public/favicon.png"
+      "src": "/favicon.ico",
+      "dest": "public/favicon.png"
     },
     {
-      "source": "/(.*)",
-      "destination": "/api/index.php"
+      "src": "/(.*)",
+      "dest": "api/index.php"
     }
   ]
 }
