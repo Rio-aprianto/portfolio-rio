@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="icon" type="image/png" href="{{ asset('favicon.png') }}">
+    <link rel="icon" type="image/png" href="{{ url('favicon.png') }}">
     <title>Arixon — Jasa Pembuatan Web & Aplikasi Mobile</title>
     <meta name="description" content="Rio Aprianto — Jasa pembuatan website, aplikasi mobile (React Native), web app (React JS, Next JS, Laravel), serta sistem skripsi." />
     <script src="https://cdn.tailwindcss.com"></script>
@@ -53,7 +53,7 @@
 <nav class="fixed top-0 inset-x-0 z-50 backdrop-blur-xl bg-[#0b0f17]/70 border-b border-white/5">
     <div class="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
         <a class="navbar-brand" href="/">
-            <img src="{{ asset('images/logo.png') }}" 
+            <img src="{{ url('images/logo.png') }}" 
                  alt="Logo" 
                  class="d-inline-block align-text-top"
                  style="height: 50px; width: auto;">
@@ -88,8 +88,8 @@
             </div>
         </div>
         <div class="reveal flex justify-center gap-6">
-            <div class="phone float"><img src="{{ asset('images/mobile-2.png') }}" alt="Aplikasi FamHeal"></div>
-            <div class="phone float mt-12" style="animation-delay:-3s"><img src="{{ asset('images/mobile-1.png') }}" alt="Aplikasi Posyandu"></div>
+            <div class="phone float"><img src="{{ url('images/mobile-2.png') }}" alt="Aplikasi FamHeal"></div>
+            <div class="phone float mt-12" style="animation-delay:-3s"><img src="{{ url('images/mobile-1.png') }}" alt="Aplikasi Posyandu"></div>
         </div>
     </div>
 </section>
@@ -240,7 +240,7 @@
         <h3 class="text-2xl font-semibold mt-16 mb-8 reveal">📱 Aplikasi Mobile</h3>
         <div class="grid md:grid-cols-2 gap-8">
             <div class="card p-8 reveal flex flex-col md:flex-row items-center gap-6">
-                <div class="phone shrink-0" style="width:200px"><img src="{{ asset('images/mobile-1.png') }}" alt="App Posyandu"></div>
+                <div class="phone shrink-0" style="width:200px"><img src="{{ url('images/mobile-1.png') }}" alt="App Posyandu"></div>
                 <div>
                     <span class="chip">React Native</span>
                     <h4 class="text-xl font-bold mt-3">Aplikasi Posyandu Digital</h4>
@@ -248,7 +248,7 @@
                 </div>
             </div>
             <div class="card p-8 reveal flex flex-col md:flex-row items-center gap-6">
-                <div class="phone shrink-0" style="width:200px"><img src="{{ asset('images/mobile-2.png') }}" alt="App FamHeal"></div>
+                <div class="phone shrink-0" style="width:200px"><img src="{{ url('images/mobile-2.png') }}" alt="App FamHeal"></div>
                 <div>
                     <span class="chip">React Native</span>
                     <h4 class="text-xl font-bold mt-3">FamHeal — Kesehatan Keluarga</h4>
