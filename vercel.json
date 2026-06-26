@@ -23,6 +23,5 @@
       "src": "/(.*)",
       "dest": "api/index.php"
     }
-  ],
-  "description": "Trigger re-build portofolio Rio"
+  ]
 }
